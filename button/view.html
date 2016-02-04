@@ -1,20 +1,20 @@
 <link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../clab-styles/color.html">
 
 <dom-module id="button-clab">
-	<link rel="import" type="css" href="../_assets/css/color-vars.css">
-	<style>
-		:host{
+	<style include="colors-styles">
+		/*:host{
 			--empty-btn:{
 				background-color: transparent;
 				border-color: var(--primary-color);
 				color: var(--primary-color);
-			}
+			};
 			--flat-btn:{
 				background-color: transparent;
 				border-color: transparent;
 				color: var(--primary-color);
-			}
-		}
+			};
+		}*/
 
 		.btn.primary {
 		  border-bottom-color: var(--primary-color-dark);
@@ -35,12 +35,15 @@
 
 
 
-		.btn.empty.primary {
-		  @apply(--empty-btn);
+		.btn.primary.empty {
+		  /*@apply(--empty-btn);*/
+		  background-color: var(--transparent);
+		  color: var(--primary-color);
+		  border-color: var(--primary-color);
 		}
 		.btn.empty.primary:hover {
 		  background-color: var(--primary-color-light);
-		  /*border-bottom-color: var(--primary-color-dark);*/
+		  border-bottom-color: var(--primary-color-dark);
 		  color: var(--primary-text-color);
 		}
 		.btn.empty.primary:active, 
@@ -51,7 +54,10 @@
 
 
 		.btn.flat.primary {
-		  @apply(--flat-btn);
+		  /*@apply(--flat-btn);*/
+		  background-color: var(--transparent);
+		  color: var(--primary-color);
+		  border-color: var(--transparent);
 		}
 		.btn.flat.primary:active, 
 		.btn.flat.primary.active {
