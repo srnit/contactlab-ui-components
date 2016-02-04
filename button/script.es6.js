@@ -45,6 +45,7 @@ class ButtonClab {
 	* Computes the class of the button joining the values of 'type', 'appearence' and 'size'
 	*/
 	_computeClass(type, appearance, size){
+		this.updateStyles();
 		return ['btn',type,appearance,size].join(' ');
 	}
 

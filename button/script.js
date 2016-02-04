@@ -59,6 +59,7 @@ var ButtonClab = (function () {
 	}, {
 		key: "_computeClass",
 		value: function _computeClass(type, appearance, size) {
+			this.updateStyles();
 			return ['btn', type, appearance, size].join(' ');
 		}
 
