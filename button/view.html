@@ -1,9 +1,22 @@
 <link rel="import" href="../../polymer/polymer.html">
 
 <dom-module id="button-clab">
-	<!-- <link rel="import" type="css" href="../_assets/css/color-vars.css"> -->
+	<link rel="import" type="css" href="../_assets/css/color-vars.css">
 	<style>
-		/*.btn.primary {
+		:host{
+			--empty-btn:{
+				background-color: transparent;
+				border-color: var(--primary-color);
+				color: var(--primary-color);
+			}
+			--flat-btn:{
+				background-color: transparent;
+				border-color: transparent;
+				color: var(--primary-color);
+			}
+		}
+
+		.btn.primary {
 		  border-bottom-color: var(--primary-color-dark);
 		  background-color: var(--primary-color);
 		  color: var(--primary-text-color);
@@ -12,7 +25,7 @@
 		  background-color: var(--primary-color-light);
 		  color: var(--primary-text-color);
 		}
-		.btn.primary:focus {
+		.btn.primary:not(.empty):not(.flat):focus {
 		  background-color: var(--primary-color);
 		}
 		.btn.primary:active, .btn.primary.active {
@@ -23,36 +36,29 @@
 
 
 		.btn.empty.primary {
-		  background: var(--transparent);
-		  border-color: var(--primary-color);
-		  color: var(--primary-color);
+		  @apply(--empty-btn);
 		}
 		.btn.empty.primary:hover {
-		  border-color: var(--primary-color-light);
-		  border-color: var(--primary-color-light);
+		  background-color: var(--primary-color-light);
+		  /*border-bottom-color: var(--primary-color-dark);*/
+		  color: var(--primary-text-color);
 		}
-		.btn.empty.primary:focus {
-		  background: transparent;
-		  border-color: var(--primary-color);
-		}
-		.btn.empty.primary:active, .btn.empty.primary.active {
+		.btn.empty.primary:active, 
+		.btn.empty.primary.active {
 		  color: var(--primary-text-color);
 		  background-color: var(--primary-color-dark);
 		}
 
 
 		.btn.flat.primary {
-		  background-color: transparent;
-		  color: var(--primary-color);
+		  @apply(--flat-btn);
 		}
-		.btn.flat.primary:hover {
-		  border-color: transparent;
-		}
-		.btn.flat.primary:active, .btn.flat.primary.active {
+		.btn.flat.primary:active, 
+		.btn.flat.primary.active {
 		  background-color: var(--primary-color);
 		  border-color: var(--primary-color);
 		  color: var(--primary-text-color);
-		}*/
+		}
 	</style>
 	
 	<template>

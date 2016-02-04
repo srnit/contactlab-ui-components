@@ -1,4 +1,5 @@
-<style is='custom-style'>* {
+/*<style is="custom-vars">*/
+  :host {
   --primary-color-lighter: #26A69A;
   --primary-color-light: #009688;
   --primary-color: #00897B;
@@ -13,5 +14,6 @@
   --warning-color: #fd6b3c;
   --error-color: #f3594e;
   --bg-color: #E7E7E7; */
-}
-</style>
+
+  }
+/*</style>*/
