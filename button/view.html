@@ -16,51 +16,52 @@
 			};
 		}*/
 
-		.btn.primary {
+		:host > button.primary {
 		  border-bottom-color: var(--primary-color-dark);
 		  background-color: var(--primary-color);
 		  color: var(--primary-text-color);
 		}
-		.btn.primary:hover {
+		:host > button.primary:hover {
 		  background-color: var(--primary-color-light);
 		  color: var(--primary-text-color);
 		}
-		.btn.primary:not(.empty):not(.flat):focus {
+		:host > button.primary:focus {
 		  background-color: var(--primary-color);
 		}
-		.btn.primary:active, .btn.primary.active {
+		:host > button.primary:active, 
+		:host > button.primary.active {
 		  color: var(--primary-text-color);
 		  background-color: var(--primary-color-dark);
 		}
 
 
 
-		.btn.primary.empty {
+		:host > button.empty.primary {
 		  /*@apply(--empty-btn);*/
 		  background-color: var(--transparent);
 		  color: var(--primary-color);
 		  border-color: var(--primary-color);
 		}
-		.btn.empty.primary:hover {
+		:host > button.empty.primary:hover {
 		  background-color: var(--primary-color-light);
 		  border-bottom-color: var(--primary-color-dark);
 		  color: var(--primary-text-color);
 		}
-		.btn.empty.primary:active, 
-		.btn.empty.primary.active {
+		:host > button.empty.primary:active, 
+		:host > button.empty.primary.active {
 		  color: var(--primary-text-color);
 		  background-color: var(--primary-color-dark);
 		}
 
 
-		.btn.flat.primary {
+		:host > button.flat.primary {
 		  /*@apply(--flat-btn);*/
 		  background-color: var(--transparent);
 		  color: var(--primary-color);
 		  border-color: var(--transparent);
 		}
-		.btn.flat.primary:active, 
-		.btn.flat.primary.active {
+		:host > button.flat.primary:active, 
+		:host > button.flat.primary.active {
 		  background-color: var(--primary-color);
 		  border-color: var(--primary-color);
 		  color: var(--primary-text-color);
