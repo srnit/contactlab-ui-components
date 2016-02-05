@@ -1,0 +1,107 @@
+<!-- ************************
+	Default Buttons 
+************************* -->
+
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../clab-styles/color.html">
+
+<dom-module id="buttons">
+  	<template>
+		<style include="colors">
+			
+		  :host > button.primary {
+		  border-bottom-color: var(--primary-color-darker);
+		  background-color: var(--primary-color);
+		  color: var(--primary-text-color);
+		}
+		:host > button.primary:hover {
+		  background-color: var(--primary-color-light);
+		  color: var(--primary-text-color);
+		}
+		:host > button.primary:focus {
+		  background-color: var(--primary-color);
+		}
+		:host > button.primary:active, 
+		:host > button.primary.active {
+			margin-top: 1px;
+			border-bottom: 0;
+		  color: var(--primary-text-color);
+		  background-color: var(--primary-color-dark);
+		}
+
+		:host > button.empty.primary {
+		  background-color: var(--transparent);
+		  color: var(--primary-color);
+		  border-color: var(--primary-color);
+		}
+		:host > button.empty.primary:hover {
+		  border-color: var(--primary-color-light);
+		}
+		:host > button.empty.primary:focus {
+		  border-color: var(--primary-color);
+		}
+		:host > button.empty.primary:active, 
+		:host > button.empty.primary.active {
+		  color: var(--primary-text-color);
+		  background-color: var(--primary-color-dark);
+		}
+
+		:host > button.flat.primary {
+		  background-color: var(--transparent);
+		  color: var(--primary-color);
+		  border-color: var(--transparent);
+		}
+		:host > button.flat.primary:active, 
+		:host > button.flat.primary.active {
+		  background-color: var(--primary-color-dark);
+		  color: var(--primary-text-color);
+		}
+
+
+		
+
+		/*:host > button.info {
+		  border-bottom-color: var(--info-color-dark);
+		  background-color: var(--info-color);
+		  color: var(--info-text-color);
+		}
+		:host > button.info:hover {
+		  background-color: var(--info-color-lighter);
+		  color: var(--info-text-color);
+		}
+		:host > button.info:focus {
+		  background-color: var(--info-color);
+		}
+		:host > button.info:active, 
+		:host > button.info.active {
+			margin-top: 1px;
+			border-bottom: 0;
+		  color: var(--info-text-color);
+		  background-color: var(--info-color-light);
+		}
+
+		:host > button.empty.info {
+		  background-color: var(--transparent);
+		  border-color: var(--info-color);
+		  color: var(--info-color);
+		}
+		:host > button.empty.info:hover {
+		  border-color: var(--info-color-lighter);
+		  color: var(--info-color-lighter);
+		}
+		:host > button.empty.info:focus {
+		  background-color: var(--transparent);
+		  border-color: var(--info-color);
+		}
+		:host > button.empty.info:active, 
+		:host > button.empty.info.active {
+			margin-top: 1px;
+			border-bottom: 0;
+		  color: var(--info-text-color);
+		  background-color: var(--info-color-light);
+		}*/
+
+
+		</style>
+	</template>
+</dom-module>

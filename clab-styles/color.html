@@ -9,14 +9,65 @@
 		<style>
 			
 		  :root {
-			  --primary-color-lighter: #26A69A;
+	  		--base-gray: #353A3D; 
+			
+			--lighter-gray: color( var(--base-gray) lightness(70%) );
+			--light-gray: color( var(--base-gray) lightness(65%) );
+			--gray: color( var(--base-gray) lightness(60%) );
+			--medium-gray: lighten($base-gray, 45);
+	  		--dark-gray: var(--base-gray);
+	  		--darker-gray: color( var(--base-gray) shade(25%) );
+
+	  		--base-background-color: #F0f0f0;
+	  		--overlay-color: color(var(--base-background-color) 97%);
+	  		--default-color: #616161;
+
+	  		--base-text-color: var(--base-gray);
+
+	  		--info-color: #9edeeb;
+	  		--info-color-dark: #74d0e2;
+	  		--info-color-lighter: #abe2ee;
+	  		--info-color-light: #91dae8;
+			--info-text-color: #31708f;
+
+			--success-color: #c3dfac;
+			--success-text-color: #3c763d; 
+			--warning-color: #f7deab;
+			--warning-text-color: #8a6d3b;
+			--error-color: #e1b2ba;
+			--error-text-color: #a94442;
+			--disabled-color: #C0C0C0;
+			--transparent: rgba(0,0,0,0);
+
+			--contactlab-color: #0072bc;
+			--contactplan-color: #14C04D;
+			--contacthub-color: #00BCD4;
+			--contactsend-color: #00578C;
+			--contactscore-color: #FFBF02;
+			--contactanalytics-color: #F9615B;
+
+			--primary-color: var(--contactlab-color);
+			--primary-color-light: #007bcb;
+			--primary-color-dark: #0069ad;
+			--primary-color-darker: #005389;
+			--primary-color-hover: color( var(--primary-color) shade(5%) );
+			--primary-text-color: #FFFFFF;
+
+			--link-color: var(--primary-color);
+			--link-color-hover: color( var(--link-color) shade(5%) );
+
+			--table-hover-color: var(--primary-color);
+			--table-striped-color: #FFF;
+
+
+			  /*--primary-color-lighter: #26A69A;
 			  --primary-color-light: #009688;
 			  --primary-color: #00897B;
 			  --primary-color-dark: #00796B;
 			  --primary-color-darker: #00695C;
 			  --primary-text-color: #FFFFFF;
 
-			  --transparent: rgba(0,0,0,0);
+			  --transparent: rgba(0,0,0,0);*/
 		  }
 
 

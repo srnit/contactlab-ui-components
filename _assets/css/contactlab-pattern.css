@@ -6985,7 +6985,7 @@ button:disabled {
   border-bottom: 0;
   margin-top: 1px;
 }
-.btn.primary, .select-button .elekti-wrapper input.primary[type="text"].js-users-list-filter, .select-button .elekti-wrapper .primary.js-users-list-filter.value_wrapper {
+/*.btn.primary, .select-button .elekti-wrapper input.primary[type="text"].js-users-list-filter, .select-button .elekti-wrapper .primary.js-users-list-filter.value_wrapper {
   border-bottom-color: #005389;
   background-color: #0072bc;
   color: #FFFFFF;
@@ -7262,7 +7262,7 @@ button:disabled {
 .btn.empty.error:active, .select-button .elekti-wrapper input.empty.error[type="text"].js-users-list-filter:active, .select-button .elekti-wrapper .empty.error.js-users-list-filter.value_wrapper:active, .buttons-group .group-item .error.btn:active, .buttons-group .group-item .select-button .elekti-wrapper input.error[type="text"].js-users-list-filter:active, .select-button .elekti-wrapper .buttons-group .group-item input.error[type="text"].js-users-list-filter:active, .buttons-group .group-item .select-button .elekti-wrapper .error.js-users-list-filter.value_wrapper:active, .select-button .elekti-wrapper .buttons-group .group-item .error.js-users-list-filter.value_wrapper:active, .btn.empty.error.active, .select-button .elekti-wrapper input.empty.error.active[type="text"].js-users-list-filter, .select-button .elekti-wrapper .empty.error.active.js-users-list-filter.value_wrapper, .buttons-group .group-item .error.active.btn, .buttons-group .group-item .select-button .elekti-wrapper input.error.active[type="text"].js-users-list-filter, .select-button .elekti-wrapper .buttons-group .group-item input.error.active[type="text"].js-users-list-filter, .buttons-group .group-item .select-button .elekti-wrapper .error.active.js-users-list-filter.value_wrapper, .select-button .elekti-wrapper .buttons-group .group-item .error.active.js-users-list-filter.value_wrapper {
   color: #a94442;
   background-color: #dda7b0;
-}
+}*/
 
 .buttons-group.small .btn.full, .buttons-group.small .select-button .elekti-wrapper input.buttons-group[type="text"].js-users-list-filter .btn.full, .select-button .elekti-wrapper .buttons-group.small input.buttons-group[type="text"].js-users-list-filter .btn.full, .buttons-group.small .select-button .elekti-wrapper .buttons-group.js-users-list-filter.value_wrapper .btn.full, .select-button .elekti-wrapper .buttons-group.small .buttons-group.js-users-list-filter.value_wrapper .btn.full, .buttons-group.small .select-button .elekti-wrapper input.full[type="text"].js-users-list-filter, .select-button .elekti-wrapper .buttons-group.small input.full[type="text"].js-users-list-filter, .buttons-group.small .select-button .elekti-wrapper .full.js-users-list-filter.value_wrapper, .select-button .elekti-wrapper .buttons-group.small .full.js-users-list-filter.value_wrapper {
   border-top: 1px solid #a6adb2;
